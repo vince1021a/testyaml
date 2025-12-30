@@ -1,0 +1,20 @@
+slug: button-demo
+name: Button Demo
+blocks:
+  - slug: Label
+    updateOn: label-update
+    content: "{{socket.labelText}}"
+  - slug: Button
+    content: Bouton 1
+    type: event
+    value:
+      event: set-label-1
+      payload:
+        labelText: Bouton 1
+  - slug: Button
+    content: Bouton 2
+    type: event
+    value:
+      event: set-label-2
+      payload:
+        labelText: Bouton 2

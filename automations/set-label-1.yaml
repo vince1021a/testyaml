@@ -1,0 +1,9 @@
+slug: set-label-1
+name: set-label-1
+when:
+  events:
+    - set-label-1
+do:
+  - set:
+      name: socket.labelText
+      value: "{{event.payload.labelText}}"
